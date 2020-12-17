@@ -1,0 +1,505 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-16T19:24:30.570Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1750000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify Login Functionality",
+        "description": "",
+        "id": "home-page-login-test;verify-login-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1132000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3424000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1374000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Sing in Page",
+            "match": {
+              "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 465000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill username with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_username_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill password with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_password_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1201000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click Sign in button",
+            "match": {
+              "location": "steps.HomePage_Steps.i_click_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the correct \"An email address required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"An email address required.\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_should_see_the_correct_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-16T19:24:40.093Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1082000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Login Functionality",
+        "description": "",
+        "id": "home-page-login-test;verify-login-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1127000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2996000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1055000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Sing in Page",
+            "match": {
+              "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 412000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill username with \"tyoltay@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tyoltay@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_username_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill password with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_password_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 824000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click Sign in button",
+            "match": {
+              "location": "steps.HomePage_Steps.i_click_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the correct \"Password is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Password is required.\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_should_see_the_correct_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-16T19:24:47.701Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1107000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify Login Functionality",
+        "description": "",
+        "id": "home-page-login-test;verify-login-functionality;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1119000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3014000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1593000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Sing in Page",
+            "match": {
+              "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 323000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill username with \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_username_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill password with \"22784539\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"22784539\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_password_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 702000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click Sign in button",
+            "match": {
+              "location": "steps.HomePage_Steps.i_click_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the correct \"An email address required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"An email address required.\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_should_see_the_correct_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-16T19:24:55.697Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1166000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify Login Functionality",
+        "description": "",
+        "id": "home-page-login-test;verify-login-functionality;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1111000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4924000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1757000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Sing in Page",
+            "match": {
+              "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 391000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill username with \"tyoltay@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tyoltay@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_username_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill password with \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456\"",
+                  "offset": 21
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_fill_password_with(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 850000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click Sign in button",
+            "match": {
+              "location": "steps.HomePage_Steps.i_click_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see the correct \"Authentication failed.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Authentication failed.\"",
+                  "offset": 25
+                }
+              ],
+              "location": "steps.HomePage_Steps.i_should_see_the_correct_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Login Test",
+    "description": "",
+    "id": "home-page-login-test",
+    "keyword": "Feature",
+    "uri": "file:features/HomePage.feature",
+    "tags": []
+  }
+]
