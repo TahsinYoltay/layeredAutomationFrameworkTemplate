@@ -3,11 +3,86 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-12-16T19:24:30.570Z",
+        "start_timestamp": "2020-12-18T12:41:28.806Z",
+        "line": 3,
+        "name": "When I get users, I verify user with response code 200",
+        "description": "",
+        "id": ";when-i-get-users--i-verify-user-with-response-code-200",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2283000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": ": I get perform GET operation for \"/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps.GetUsers_Steps.i_get_perform_get_operation_for(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 389000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get user list",
+            "match": {
+              "location": "steps.GetUsers_Steps.i_get_user_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I verify response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.GetUsers_Steps.i_verify_response_code(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Non-UI"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:features/GetUsers.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T12:41:31.554Z",
         "before": [
           {
             "result": {
-              "duration": 1750000000,
+              "duration": 1842000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +90,14 @@
             }
           }
         ],
-        "line": 14,
+        "line": 15,
         "name": "Verify Login Functionality",
         "description": "",
         "id": "home-page-login-test;verify-login-functionality;;2",
         "after": [
           {
             "result": {
-              "duration": 1132000000,
+              "duration": 1106000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +110,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3424000000,
+              "duration": 3001000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I am on the homepage",
             "match": {
               "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
@@ -47,10 +122,10 @@
           },
           {
             "result": {
-              "duration": 1374000000,
+              "duration": 1378000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I navigate to Sing in Page",
             "match": {
               "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
@@ -59,10 +134,10 @@
           },
           {
             "result": {
-              "duration": 465000000,
+              "duration": 285000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I fill username with \"\"",
             "match": {
               "arguments": [
@@ -77,10 +152,10 @@
           },
           {
             "result": {
-              "duration": 59000000,
+              "duration": 110000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I fill password with \"\"",
             "match": {
               "arguments": [
@@ -95,10 +170,10 @@
           },
           {
             "result": {
-              "duration": 1201000000,
+              "duration": 752000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I click Sign in button",
             "match": {
               "location": "steps.HomePage_Steps.i_click_sign_in_button()"
@@ -107,10 +182,10 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 30000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "I should see the correct \"An email address required.\"",
             "match": {
               "arguments": [
@@ -123,14 +198,19 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          }
         ]
       },
       {
-        "start_timestamp": "2020-12-16T19:24:40.093Z",
+        "start_timestamp": "2020-12-18T12:41:40.071Z",
         "before": [
           {
             "result": {
-              "duration": 1082000000,
+              "duration": 1080000000,
               "status": "passed"
             },
             "match": {
@@ -138,14 +218,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 16,
         "name": "Verify Login Functionality",
         "description": "",
         "id": "home-page-login-test;verify-login-functionality;;3",
         "after": [
           {
             "result": {
-              "duration": 1127000000,
+              "duration": 1117000000,
               "status": "passed"
             },
             "match": {
@@ -158,10 +238,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2996000000,
+              "duration": 2932000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I am on the homepage",
             "match": {
               "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
@@ -170,10 +250,10 @@
           },
           {
             "result": {
-              "duration": 1055000000,
+              "duration": 1063000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I navigate to Sing in Page",
             "match": {
               "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
@@ -182,10 +262,10 @@
           },
           {
             "result": {
-              "duration": 412000000,
+              "duration": 319000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I fill username with \"tyoltay@gmail.com\"",
             "match": {
               "arguments": [
@@ -200,10 +280,10 @@
           },
           {
             "result": {
-              "duration": 72000000,
+              "duration": 69000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I fill password with \"\"",
             "match": {
               "arguments": [
@@ -218,10 +298,10 @@
           },
           {
             "result": {
-              "duration": 824000000,
+              "duration": 675000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I click Sign in button",
             "match": {
               "location": "steps.HomePage_Steps.i_click_sign_in_button()"
@@ -230,10 +310,10 @@
           },
           {
             "result": {
-              "duration": 33000000,
+              "duration": 27000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "I should see the correct \"Password is required.\"",
             "match": {
               "arguments": [
@@ -246,14 +326,19 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          }
         ]
       },
       {
-        "start_timestamp": "2020-12-16T19:24:47.701Z",
+        "start_timestamp": "2020-12-18T12:41:47.361Z",
         "before": [
           {
             "result": {
-              "duration": 1107000000,
+              "duration": 1043000000,
               "status": "passed"
             },
             "match": {
@@ -261,14 +346,14 @@
             }
           }
         ],
-        "line": 16,
+        "line": 17,
         "name": "Verify Login Functionality",
         "description": "",
         "id": "home-page-login-test;verify-login-functionality;;4",
         "after": [
           {
             "result": {
-              "duration": 1119000000,
+              "duration": 1125000000,
               "status": "passed"
             },
             "match": {
@@ -281,10 +366,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3014000000,
+              "duration": 4881000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I am on the homepage",
             "match": {
               "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
@@ -293,10 +378,10 @@
           },
           {
             "result": {
-              "duration": 1593000000,
+              "duration": 964000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I navigate to Sing in Page",
             "match": {
               "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
@@ -305,10 +390,10 @@
           },
           {
             "result": {
-              "duration": 323000000,
+              "duration": 296000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I fill username with \"\"",
             "match": {
               "arguments": [
@@ -323,10 +408,10 @@
           },
           {
             "result": {
-              "duration": 108000000,
+              "duration": 112000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I fill password with \"22784539\"",
             "match": {
               "arguments": [
@@ -341,10 +426,10 @@
           },
           {
             "result": {
-              "duration": 702000000,
+              "duration": 755000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I click Sign in button",
             "match": {
               "location": "steps.HomePage_Steps.i_click_sign_in_button()"
@@ -356,7 +441,7 @@
               "duration": 26000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "I should see the correct \"An email address required.\"",
             "match": {
               "arguments": [
@@ -369,14 +454,19 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          }
         ]
       },
       {
-        "start_timestamp": "2020-12-16T19:24:55.697Z",
+        "start_timestamp": "2020-12-18T12:41:56.569Z",
         "before": [
           {
             "result": {
-              "duration": 1166000000,
+              "duration": 1031000000,
               "status": "passed"
             },
             "match": {
@@ -384,14 +474,14 @@
             }
           }
         ],
-        "line": 17,
+        "line": 18,
         "name": "Verify Login Functionality",
         "description": "",
         "id": "home-page-login-test;verify-login-functionality;;5",
         "after": [
           {
             "result": {
-              "duration": 1111000000,
+              "duration": 1138000000,
               "status": "passed"
             },
             "match": {
@@ -404,10 +494,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4924000000,
+              "duration": 5049000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "I am on the homepage",
             "match": {
               "location": "steps.HomePage_Steps.i_am_on_the_homepage()"
@@ -416,10 +506,10 @@
           },
           {
             "result": {
-              "duration": 1757000000,
+              "duration": 1381000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I navigate to Sing in Page",
             "match": {
               "location": "steps.HomePage_Steps.i_navige_to_sing_in_page()"
@@ -428,10 +518,10 @@
           },
           {
             "result": {
-              "duration": 391000000,
+              "duration": 409000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I fill username with \"tyoltay@gmail.com\"",
             "match": {
               "arguments": [
@@ -446,10 +536,10 @@
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 92000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "I fill password with \"123456\"",
             "match": {
               "arguments": [
@@ -464,10 +554,10 @@
           },
           {
             "result": {
-              "duration": 850000000,
+              "duration": 719000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "I click Sign in button",
             "match": {
               "location": "steps.HomePage_Steps.i_click_sign_in_button()"
@@ -476,10 +566,10 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 28000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "I should see the correct \"Authentication failed.\"",
             "match": {
               "arguments": [
@@ -492,6 +582,11 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@UI"
+          }
         ]
       }
     ],
@@ -500,6 +595,164 @@
     "id": "home-page-login-test",
     "keyword": "Feature",
     "uri": "file:features/HomePage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T12:42:06.421Z",
+        "line": 12,
+        "name": "Verify Post registration",
+        "description": "",
+        "id": "verify-post-and-get-operations-on-reqres.in-using-rest-assured;verify-post-registration;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I creted valid register payload \"eve.holt@reqres.in\" and \"pistol\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"eve.holt@reqres.in\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"pistol\"",
+                  "offset": 57
+                }
+              ],
+              "location": "steps.RestAssuredTest_Steps.i_get_perform_post_operation_for(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 519000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get perform POST operation for \"/register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/register\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.RestAssuredTest_Steps.i_send_a_valid_register_paylod_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response status code should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.RestAssuredTest_Steps.response_status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Non-UI"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T12:42:06.955Z",
+        "line": 13,
+        "name": "Verify Post registration",
+        "description": "",
+        "id": "verify-post-and-get-operations-on-reqres.in-using-rest-assured;verify-post-registration;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I creted valid register payload \"eve.holt@reqres.in\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"eve.holt@reqres.in\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 57
+                }
+              ],
+              "location": "steps.RestAssuredTest_Steps.i_get_perform_post_operation_for(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get perform POST operation for \"/register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/register\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.RestAssuredTest_Steps.i_send_a_valid_register_paylod_and(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response status code should be \"400\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.RestAssuredTest_Steps.response_status_code_should_be(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Non-UI"
+          }
+        ]
+      }
+    ],
+    "name": "Verify POST and GET operations on reqres.in using REST-Assured",
+    "description": "",
+    "id": "verify-post-and-get-operations-on-reqres.in-using-rest-assured",
+    "keyword": "Feature",
+    "uri": "file:features/RestAssuredTest.feature",
     "tags": []
   }
 ]

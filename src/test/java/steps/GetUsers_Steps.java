@@ -3,15 +3,15 @@ package steps;
 import api.models.Users;
 import com.google.inject.Inject;
 import api.GetUserContex;
-import api.RestAssuredUtil;
+import api.apiHelper.RestAssuredUtil;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
+import org.junit.Assert;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.Assert.assertTrue;
 
@@ -23,7 +23,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class GetUsers_Steps {
 
-//    @Inject
+    @Inject
     private GetUserContex getUserContex;
 
     private static final String HOST ="https://reqres.in/api";
@@ -32,21 +32,23 @@ public class GetUsers_Steps {
 
     @Given(": I get perform GET operation for {string}")
     public void i_get_perform_get_operation_for(String string) {
-
+        Response response = RestAssuredUtil.sendGetRequest(HOST,PATH);
+        getUserContex.setHttpResponse(response);
     }
 
     @When("I get user list")
     public void i_get_user_list() {
-        Response response = RestAssuredUtil.sendGetRequest(HOST,PATH);
-        getUserContex.setHttpResponse(response);
+
+        getUserContex.getHttpResponse().getBody().prettyPrint();
+        List<Users> users = Arrays.asList( getUserContex.getUsers());
 
     }
 
     @Then("I verify response code {string}")
     public void i_verify_response_code(String string) {
-        List<Users> users = Arrays.asList( getUserContex.getUsers());
-        Optional<Users>  optionalUsers = users.stream().filter(users1 -> users1.getFirstName().equals("George")).findFirst();
-        assertTrue("test snycy", optionalUsers.isPresent());
-    }
+//        List<Users> users = Arrays.asList( getUserContex.getUsers());
+//        Optional<Users>  optionalUsers = users.stream().filter(users1 -> users1.getTotal().equals("George")).findFirst();
+        Assert.assertEquals(getUserContex.getHttpResponse().statusCode(),200);
+     }
 
 }

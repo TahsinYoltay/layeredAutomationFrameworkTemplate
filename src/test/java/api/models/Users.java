@@ -1,22 +1,36 @@
 package api.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-//import io.cucumber.guice.ScenarioScoped;
-//import cucumber.runtime.java.guice.ScenarioScoped;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import io.cucumber.guice.ScenarioScoped;
 import lombok.Data;
-
-/**
- * Created by IntelliJ IDEA.
- * User: TAHSIN YOLTAY
- * Date: 16/12/2020
- * Time: 23:49
- */
+import java.util.List;
 
 @Data
-//@ScenarioScoped
-//@ScenarioScoped
+@ScenarioScoped
 @JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "page",
+        "per_page",
+        "total",
+        "total_pages",
+        "data",
+        "support"
+})
 public class Users {
-    private String firstName;
-    private String lastName;
+    @JsonProperty("page")
+    public Integer page;
+    @JsonProperty("per_page")
+    public Integer perPage;
+    @JsonProperty("total")
+    public Integer total;
+    @JsonProperty("total_pages")
+    public Integer totalPages;
+    @JsonProperty("data")
+    public List<Datum> data = null;
+    @JsonProperty("support")
+    public Support support;
 }
