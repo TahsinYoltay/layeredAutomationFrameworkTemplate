@@ -3,16 +3,15 @@
 
 Tools & libraries
 =================
-
-*Cucumber-JVM:- BDD Framework  
-*Custom Page Object Pattern and utility functions  
-*Selenium WebDriver: - Browser automation framework
-*JAVA: - Programming language  
-*JUnit: - JUnit Java testing framework  
-*Maven: - Build tool  
-*Lombok: - Java utility api  
-*Guice: - Standard Dependency Injection     
-*Rest-Assured : - Restful Api framework     
+- Selenium WebDriver: - Browser automation framework
+- Cucumber-JVM:- BDD Framework  
+- Custom Page Object Pattern and utility functions  
+- JUnit: - JUnit Java testing framework  
+- Maven: - Build tool  
+- Lombok: - Java utility api  
+- Guice: - Standard Dependency Injection     
+- Rest-Assured : - Restful Api framework  
+- JAVA: - Programming language
 
 Compile Build or Run Tests
 ==========================
