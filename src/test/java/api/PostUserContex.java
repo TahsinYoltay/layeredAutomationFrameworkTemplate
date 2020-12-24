@@ -16,6 +16,9 @@ public class PostUserContex {
     private Response httpResponse;
     private PostData[] postData;
 
+    /**
+     * @return post request body
+     */
     public PostData[] setBody() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);

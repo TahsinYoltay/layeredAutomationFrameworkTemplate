@@ -10,17 +10,20 @@ import lombok.Data;
 
 @Data
 @ScenarioScoped
- public class GetUserContex {
+public class GetUserContex {
 
     private Response httpResponse;
     private Users[] users;
 
 
-    public Users[] getUsers(){
+    /**
+     * @return returns all users from api
+     */
+    public Users[] getUsers() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
         try {
-            users = mapper.readValue(getHttpResponse().getBody().asString(),Users[].class);
+            users = mapper.readValue(getHttpResponse().getBody().asString(), Users[].class);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }

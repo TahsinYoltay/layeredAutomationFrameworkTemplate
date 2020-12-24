@@ -4,11 +4,16 @@ import helper.DriverBase;
 import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
-    protected DriverBase web;
+    protected final DriverBase web;
 
-    public BasePage(DriverBase web){
+    /**
+     * Base Driver class
+     *
+     * @param web
+     */
+    public BasePage(DriverBase web) {
         this.web = web;
-        PageFactory.initElements(web.driver,this);
+        PageFactory.initElements(web.driver, this);
     }
 
 }

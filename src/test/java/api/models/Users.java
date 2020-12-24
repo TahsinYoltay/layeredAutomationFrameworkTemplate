@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import io.cucumber.guice.ScenarioScoped;
 import lombok.Data;
+
 import java.util.List;
 
 @Data
@@ -20,6 +21,7 @@ import java.util.List;
         "data",
         "support"
 })
+
 public class Users {
     @JsonProperty("page")
     public Integer page;
@@ -33,4 +35,26 @@ public class Users {
     public List<Datum> data = null;
     @JsonProperty("support")
     public Support support;
+
+    public Users() {
+    }
+
+    /**
+     * @param page
+     * @param perPage
+     * @param total
+     * @param totalPages
+     * @param data
+     * @param support
+     */
+    public Users(Integer page, Integer perPage, Integer total, Integer totalPages, List<Datum> data, Support support) {
+        super();
+        this.page = page;
+        this.perPage = perPage;
+        this.total = total;
+        this.totalPages = totalPages;
+        this.data = data;
+        this.support = support;
+    }
+
 }

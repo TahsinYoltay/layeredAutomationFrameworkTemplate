@@ -20,4 +20,16 @@ public class Support {
     @JsonProperty("text")
     public String text;
 
+    public Support() {
+    }
+
+    /**
+     * @param text
+     * @param url
+     */
+    public Support(String url, String text) {
+        super();
+        this.url = url;
+        this.text = text;
+    }
 }

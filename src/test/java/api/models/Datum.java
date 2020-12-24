@@ -14,6 +14,8 @@ import lombok.Data;
         "last_name",
         "avatar"
 })
+
+
 @Data
 @ScenarioScoped
 public class Datum {
@@ -28,5 +30,24 @@ public class Datum {
     public String lastName;
     @JsonProperty("avatar")
     public String avatar;
+
+    public Datum() {
+    }
+
+    /**
+     * @param id
+     * @param email
+     * @param firstName
+     * @param lastName
+     * @param avatar
+     */
+    public Datum(Integer id, String email, String firstName, String lastName, String avatar) {
+        super();
+        this.id = id;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.avatar = avatar;
+    }
 
 }

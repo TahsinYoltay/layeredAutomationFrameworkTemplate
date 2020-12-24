@@ -2,18 +2,23 @@ package steps;
 
 import com.google.inject.Inject;
 import helper.DriverBase;
-import helper.Props;
+import helper.TestConfiguration;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.openqa.selenium.WebDriver;
+import org.apache.log4j.Logger;
 
 public class Hooks {
-
+    private static Logger log;
     @Inject
     private DriverBase driverBase;
 
+    @Before
+    public static void beforeAll() throws Exception {
+        TestConfiguration.loadAPropertiesFile("src/test/resources/testConfiguration.yaml");
+    }
+
     @Before("@UI")
-    public void setUp(){
+    public void setUp() throws Exception {
 
     }
 
@@ -21,10 +26,6 @@ public class Hooks {
     public void tearDown() throws Exception {
         driverBase.driver.quit();
         Thread.sleep(1000);
-    }
-
-    public WebDriver getDriver(){
-        return driverBase.driver;
     }
 
 }
